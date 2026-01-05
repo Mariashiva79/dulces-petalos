@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  height: 44px;
+
+  background: var(--Colors-Neutral-100, #FFFFFF);
+  border: 1px solid var(--Colors-Neutral-400, #BBBBBB);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  background: transparent;
+  color: var(--Colors-Neutral-800, #606060);
+}
+
+.input::placeholder {
+  color: #808080;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-bottom: 0px;
+  }
+}
